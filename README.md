@@ -17,10 +17,14 @@ a)setUnion : Uses union Operation where the user can implement the union of two 
 b)setInterction : Uses intersect Operation where the user can implement the intersection of two sets.
 c)setDifference : Uses diff operation where the user can implement the difference of two sets.
 d)setSymmetricDifference : Since there is no standard operation for setSymmetricDifference,we can create an operation using operators diff and union.That is 
-                           setSymmetricDifference will be (set1.diff(set2)).union(set2.diff(set1))
+                           setSymmetricDifference will be : 
+                           
+                           (set1.diff(set2)).union(set2.diff(set1))
 e)setCartesianProduct : Similar to the setSymmetricDifference ,there is no standard operator to implement the cartesian product of two sets and hence we have
                         created an operation using flatMap() method. We know that cartesian product of two sets is given as :
+                        
                         set1 X set2 = {(a,b) : a € set1 , b € set2 }
+                        
                         So when we use flatMap() method,it will take the predicate and applies it to each element of the collection and the returns the new
                         collection.In our case flatMap() method will take the element from set1(element belonging to set 1 (a)) and set2 (element belonging to 
                         set2(b)) and then returns a new set with these elements which is the cartesian product of the two sets.
@@ -29,7 +33,9 @@ Also there are other opeations that can be performed with sets and they are :
 
 a)newSet : In this language, newSet can be used to create a new set and populate the elements to that set.In the newSet I have used (args:Any*) so that our set 
            can take any number of elements. And the syntax to print the new can be something like the following :
+           
            println(newSet("Your set name",1,2,3)) or
+           
            println(newSet("Your set name","string1","string2","string3")) and hence like this any set can be created with newSet in scalaSet language.
 b)setInsert : Another feature is to insert elements by the user after the set is already created.Say if the user wants to insert a few elements to the set that
               was created ,the the user can use setInsert in order to insert more elements to the already existing set.And the syntax for this feature is as
