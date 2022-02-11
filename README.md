@@ -11,15 +11,19 @@ package prajwal should be imported to run the program and implement binary opera
 
 Binary Operations that can be performed on sets by the user:
 
-The different binary operations that can be performed on sets by the users are :-
+The different binary operations that can be performed on sets by the users are :
 
 a)setUnion : Uses union Operation where the user can implement the union of two sets.
+
 b)setInterction : Uses intersect Operation where the user can implement the intersection of two sets.
+
 c)setDifference : Uses diff operation where the user can implement the difference of two sets.
+
 d)setSymmetricDifference : Since there is no standard operation for setSymmetricDifference,we can create an operation using operators diff and union.That is 
                            setSymmetricDifference will be : 
                            
                            (set1.diff(set2)).union(set2.diff(set1))
+
 e)setCartesianProduct : Similar to the setSymmetricDifference ,there is no standard operator to implement the cartesian product of two sets and hence we have
                         created an operation using flatMap() method. We know that cartesian product of two sets is given as :
                         
